@@ -1,1 +1,4 @@
-export type Autor = {}
+export type Autor = {
+    nombre: string,
+    foto: string
+}
