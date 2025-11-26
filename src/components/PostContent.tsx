@@ -4,7 +4,6 @@ import StarButton from "./StarButton";
 import "./PostContent.css";
 import Carousel from "./Carousel";
 
-
 interface PostContentProps {
     entrada : Entrada
 };

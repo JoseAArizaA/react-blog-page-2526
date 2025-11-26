@@ -19,4 +19,3 @@ function BlogPost( {entradaMostrada, listadoEntradas} : BlogPostProps) {
 }
 
 export default BlogPost;
-

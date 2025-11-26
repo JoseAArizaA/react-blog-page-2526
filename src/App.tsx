@@ -4,8 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import type { Entrada } from "./types/entrada";
 import BlogPost from "./components/BlogPost.tsx";
-import SideBar from "./components/Sidebar.tsx";
-
+import SideBar from "./components/SideBar.tsx";
 
 
 const App = () => {

@@ -1,5 +1,1 @@
-export type Comentario = {
-    id: number,
-    nombreUsuario: string,
-    texto: string
-}
+export type Comentario = { id: number; nombreUsuario: string; texto: string };

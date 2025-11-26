@@ -1,24 +1,22 @@
-interface CarouselControlsProps {
-  indiceActivo: number,
-  setIndiceActivo: React.Dispatch<React.SetStateAction<number>>,
-  ciclo?: boolean
+import { useState } from "react";
+import "./Carousel.css";
+import CarouselControls from "./CarouselControls";
+import CarouselImages from "./CarouselImages";
+import CarouselIndicators from "./CarouselIndicators";
+
+interface CarouselProps {
+  imagenes: string[]
 }
 
-function CarouselControls( { indiceActivo, setIndiceActivo, ciclo = true } : CarouselControlsProps) {
-
-  function handleLeftClick(){
-      setIndiceActivo(indiceActivo -1);
-  }
-  
-  function handleRightClick(){
-      setIndiceActivo(indiceActivo +1);
-  }
-  console.log(ciclo); // Borrar cuando esté implementado el control
+function Carousel( {imagenes} : CarouselProps ) {
+  const [indiceActivo, setIndiceActivo] = useState(0);
   return (
-    <div className="carousel-controls">
-      <button className="carousel-btn" onClick={handleLeftClick}>&lt;</button>
-      <button className="carousel-btn" onClick={handleRightClick}>&gt;</button>
+    <div className="carousel-container">
+      <CarouselImages imagenes={imagenes} indiceActivo={indiceActivo} />
+      <CarouselControls indiceActivo={indiceActivo} setIndiceActivo={setIndiceActivo} />
+      <CarouselIndicators />
     </div>
   );
 }
-export default CarouselControls;
+
+export default Carousel;

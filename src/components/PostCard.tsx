@@ -15,3 +15,9 @@ function PostCard( {entrada} : PostCardProps ) {
 }
 
 export default PostCard;
+
+
+
+
+
+

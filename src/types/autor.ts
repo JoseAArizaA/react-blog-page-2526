@@ -1,4 +1,4 @@
 export type Autor = {
-    nombre: string,
-    foto: string
-}
+      nombre: string,
+      foto: string
+    }
