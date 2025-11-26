@@ -1,3 +1,5 @@
+import './Header.css';
+
 export default function Header() {
     const secciones : string[] = ["Inicio", "Noticias", "Tutoriales", "Contacto"];
   return (
@@ -6,7 +8,7 @@ export default function Header() {
       <nav className="header__nav">
         <ul>
           {secciones.map((seccion) => (
-            <li key={seccion}>{seccion}</li>
+            <li key={seccion} >{seccion}</li>
           ))}
         </ul>
       </nav>
