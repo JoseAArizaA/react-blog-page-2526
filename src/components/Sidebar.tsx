@@ -3,8 +3,8 @@ import AuthorInfo from "./AuthorInfo";
 import CategoryPosts from "./CategoryPosts";
 import TagCloud from "./TagCloud";
 import "./SideBar.css"
+import TagPosts from "./TagPosts";
 import { useState } from "react";
-import TagPosts from "./TagPost";
 
 interface SideBarProps {
     entradaMostrada: Entrada,
