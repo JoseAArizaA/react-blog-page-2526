@@ -13,7 +13,7 @@ function Carousel( {imagenes} : CarouselProps ) {
   return (
     <div className="carousel-container">
       <CarouselImages imagenes={imagenes} indiceActivo={indiceActivo} />
-      <CarouselControls indiceActivo={indiceActivo} setIndiceActivo={setIndiceActivo}  />
+      <CarouselControls indiceActivo={indiceActivo} setIndiceActivo={setIndiceActivo} />
       <CarouselIndicators />
     </div>
   );
